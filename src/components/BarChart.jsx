@@ -14,6 +14,7 @@ const BarChart = ({ data, stacked=false }) => {
         backgroundColor: "#36393f55",
         bodyColor: "#FFF",
         padding: 10,
+        displayColors: false,
       },
     },
     responsive: true,
