@@ -32,7 +32,7 @@ const Home = () => {
             <TableOfContentsBox header="Charts" description="A Level Subjects taken for Degrees • IGCSE, AS and SAT Grade Distribution • Nationality Specific GPA" />
           </div>
           <SectionHeader title="Class Profile" />
-          <Container bigText="58" smallText="students were part of the Class of 2023." followUpText="The number is on the higher end of the mean range of graduating class sizes. With this large class size came a plethora of cultures, traditions, mindsets and talents." />
+          <Container bigText="49" smallText="students were part of the Class of 2023." followUpText="The number is on the lower end of the mean range of graduating class sizes. With this large class size came a plethora of cultures, traditions, mindsets and talents." />
           <Container bigText="13" smallText="different nationalities made up the Class of 2023." followUpText="These include Pakistani, Egyptian, Kashmiri, Indian, Bangladeshi, Canadian, American, British, Syrian, Sudanese, Jordanian, Lebanese and Algerian. A few of the students had a dual-nationality." />
         </div>
       </div>
