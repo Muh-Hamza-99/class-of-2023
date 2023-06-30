@@ -13,6 +13,8 @@ const BubbleChart = ({ data, startAtZero=true, callbacks }) => {
         padding: 10,
         displayColors: false,
         callbacks: callbacks,
+        xAlign: "center",
+        yAlign: "bottom",
       },
       legend: {
         display: false,
