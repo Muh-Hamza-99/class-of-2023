@@ -380,7 +380,7 @@ export const nationalityGPA = {
     },
     {
       label: "Kashmiri",
-      data: [{ x: 2, y: 3.3, r: 10 }, { x: 2, y: 4, r: 5 }],
+      data: [{ x: 2, y: 4, r: 10 }, { x: 2, y: 3.3, r: 5 }],
       backgroundColor: "red",
     },
     {
