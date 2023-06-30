@@ -34,7 +34,7 @@ const Charts = () => {
               </div>
               <SectionHeader title="Nationality Specific GPA" />
               <div className="w-full flex justify-center items-center m-2 mt-4 p-4 shadow-lg bg-gray-800 rounded-lg md:flex-row md:w-4/5">
-                <BubbleChart data={nationalityGPA} callbacks={
+                <BubbleChart data={nationalityGPA} showYLabel={true} YLabel="Unweighted GPA" suggestedMinY={3.2} suggestedMaxY={4.1} showXTicks={false} callbacks={
                   {
                     label: function (tooltipItem) {
                       let label = tooltipItem.dataset.label || "";
@@ -47,13 +47,12 @@ const Charts = () => {
               </div>
               <SectionHeader title="SAT Score Distribution" />
               <div className="w-full flex justify-center items-center m-2 mt-4 p-4 shadow-lg bg-gray-800 rounded-lg md:flex-row md:w-4/5">
-                <BubbleChart data={SATScoreDistribution} startAtZero={false} callbacks={
+                <BubbleChart data={SATScoreDistribution} showXLabel={true} Xlabel="SAT Score" suggestedMinX={1100} suggestedMaxX={1600} suggestedMinY={0.49} suggestedMaxY={0.51} startAtZero={false} showYTicks={true} callbacks={
                   {
                     label: function(tooltipItem) {
                       let label = tooltipItem.dataset.label || "";
                       const value = tooltipItem.formattedValue.split(" ")[0].slice(1).slice(0, -1)
                       const frequency = tooltipItem.formattedValue.split(" ")[2].slice(0, -1);
-                      console.log(value, frequency)
                       label += `: ${value.replace(/\,/g,'')} | Frequency: ${parseInt(frequency/5)}`;
                       return label;
                     }

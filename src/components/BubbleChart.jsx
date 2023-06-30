@@ -4,7 +4,7 @@ import { Bubble } from "react-chartjs-2";
 
 ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
-const BubbleChart = ({ data, startAtZero=true, callbacks }) => {
+const BubbleChart = ({ data, startAtZero=true, callbacks, suggestedMinY, suggestedMaxY, suggestedMinX, suggestedMaxX, showXTicks=true, showYTicks=true, showXLabel=false, showYLabel=false, XLabel, YLabel }) => {
   const options = {
     plugins: {
       tooltip: {
@@ -23,6 +23,14 @@ const BubbleChart = ({ data, startAtZero=true, callbacks }) => {
     scales: {
       x: {
         beginAtZero: startAtZero,
+        suggestedMin: suggestedMinX,
+        suggestedMax: suggestedMaxX,
+        ticks: { display: showXTicks },
+      },
+      y: { 
+        suggestedMin: suggestedMinY, 
+        suggestedMax: suggestedMaxY,
+        ticks: { display: showYTicks },
       },
     },
   };
