@@ -47,7 +47,7 @@ const Charts = () => {
               </div>
               <SectionHeader title="SAT Score Distribution" />
               <div className="w-full flex justify-center items-center m-2 mt-4 p-4 shadow-lg bg-gray-800 rounded-lg md:flex-row md:w-4/5">
-                <BubbleChart data={SATScoreDistribution} showXLabel={true} Xlabel="SAT Score" suggestedMinX={1100} suggestedMaxX={1600} suggestedMinY={0.49} suggestedMaxY={0.51} startAtZero={false} showYTicks={true} callbacks={
+                <BubbleChart data={SATScoreDistribution} showXLabel={true} Xlabel="SAT Score" suggestedMinX={1100} suggestedMaxX={1600} suggestedMinY={0.49} suggestedMaxY={0.51} startAtZero={false} showYTicks={false} callbacks={
                   {
                     label: function(tooltipItem) {
                       let label = tooltipItem.dataset.label || "";
