@@ -54,7 +54,7 @@ const Charts = () => {
                       const value = tooltipItem.formattedValue.split(" ")[0].slice(1).slice(0, -1)
                       const frequency = tooltipItem.formattedValue.split(" ")[2].slice(0, -1);
                       console.log(value, frequency)
-                      label += `: ${value}, Frequency : ${parseInt(frequency/5)}`;
+                      label += `: ${value}, Frequency: ${parseInt(frequency/5)}`;
                       return label;
                     }
                   }
