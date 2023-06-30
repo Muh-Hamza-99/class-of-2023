@@ -152,6 +152,79 @@ export const droppedOrAddedSubjects = [
   },
 ];
 
+export const nationalities = [
+  {
+    text: "Bangladeshi",
+    tooltip: "1",
+    fontSize: "xs",
+  },
+  {
+    text: "Jordanian",
+    tooltip: "2",
+    fontSize: "sm",
+  },
+  {
+    text: "Indian",
+    tooltip: "5",
+    fontSize: "xl",
+  },
+  {
+    text: "Algerian",
+    tooltip: "1",
+    fontSize: "xs",
+  },
+  {
+    text: "Saudi",
+    tooltip: "2",
+    fontSize: "sm",
+  },
+  {
+    text: "Egyptian",
+    tooltip: "10",
+    fontSize: "2xl",
+  },
+  {
+    text: "American",
+    tooltip: "1",
+    fontSize: "xs",
+  },
+  {
+    text: "Pakistani",
+    tooltip: "16",
+    fontSize: "3xl",
+  },
+  {
+    text: "British",
+    tooltip: "3",
+    fontSize: "base",
+  },
+  {
+    text: "Syrian",
+    tooltip: "1",
+    fontSize: "xs",
+  },
+  {
+    text: "Canadian",
+    tooltip: "2",
+    fontSize: "sm",
+  },
+  {
+    text: "Sudanese",
+    tooltip: "5",
+    fontSize: "xl",
+  },
+  {
+    text: "Kashmiri",
+    tooltip: "3",
+    fontSize: "base",
+  },
+  {
+    text: "Lebanese",
+    tooltip: "1",
+    fontSize: "xs",
+  },
+];
+
 export const degreeSubjectsData = {
   labels: ["Computer Science", "Medicine", "Engineering"],
   datasets: [

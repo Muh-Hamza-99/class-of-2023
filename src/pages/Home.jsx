@@ -3,7 +3,9 @@ import PageHeader from "../components/PageHeader";
 import SectionHeader from "../components/SectionHeader";
 import Container from "../components/Container";
 import TableOfContentsBox from "../components/TableOfContentsBox";
+import TextChartContainer from "../components/TextChartContainer";
 import IlluminateText from "../components/IlluminateText";
+import { nationalities } from "../data"
 
 const Home = () => {
   return (
@@ -33,7 +35,8 @@ const Home = () => {
           </div>
           <SectionHeader title="Class Profile" />
           <Container bigText="49" smallText="students were part of the Class of 2023." followUpText="The number is on the lower end of the mean range of graduating class sizes. With this large class size came a plethora of cultures, traditions, mindsets and talents." />
-          <Container bigText="13" smallText="different nationalities made up the Class of 2023." followUpText="These include Pakistani, Egyptian, Kashmiri, Indian, Bangladeshi, Canadian, American, British, Syrian, Sudanese, Jordanian, Lebanese and Algerian. A few of the students had a dual-nationality." />
+          <Container bigText="14" smallText="different nationalities made up the Class of 2023." followUpText="The students of the Class of 2023 came from across 4 continents, with large groups of students from South Asia and North Africa." />
+          <TextChartContainer data={nationalities} description="Some students had a dual-nationality, with both nationalities being included." />
         </div>
       </div>
     </>
