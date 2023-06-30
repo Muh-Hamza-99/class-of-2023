@@ -34,11 +34,31 @@ const Charts = () => {
               </div>
               <SectionHeader title="Nationality Specific GPA" />
               <div className="w-full flex justify-center items-center m-2 mt-4 p-4 shadow-lg bg-gray-800 rounded-lg md:flex-row md:w-4/5">
-                <BubbleChart data={nationalityGPA} />
+                <BubbleChart data={nationalityGPA} callbacks={
+                  {
+                    label: function (tooltipItem) {
+                      let label = tooltipItem.dataset.label || "";
+                      const frequency = tooltipItem.formattedValue.split(",")[2].slice(0, -1);
+                      label += `: ${parseInt(frequency/5)}`
+                      return label;
+                    }, 
+                  }
+                } />
               </div>
               <SectionHeader title="SAT Score Distribution" />
               <div className="w-full flex justify-center items-center m-2 mt-4 p-4 shadow-lg bg-gray-800 rounded-lg md:flex-row md:w-4/5">
-                <BubbleChart data={SATScoreDistribution} startAtZero={false} />
+                <BubbleChart data={SATScoreDistribution} startAtZero={false} callbacks={
+                  {
+                    label: function(tooltipItem) {
+                      let label = tooltipItem.dataset.label || "";
+                      const value = tooltipItem.formattedValue.split(" ")[0].slice(1).slice(0, -1)
+                      const frequency = tooltipItem.formattedValue.split(" ")[2].slice(0, -1);
+                      console.log(value, frequency)
+                      label += `: ${value}, Frequency : ${parseInt(frequency/5)}`;
+                      return label;
+                    }
+                  }
+                } />
               </div>
             </div>
           )
